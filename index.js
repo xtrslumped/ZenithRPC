@@ -56,25 +56,17 @@ client.on('ready', async () => {
   const updatePresenceAndActivity = () => {
     sendWebhookMessage();
     const r = new Discord.RichPresence()
-      .setApplicationId('1023269983922442373') // Please replace all values to your own. If it seems to say null then you could easily replace it with 'text/image-value' 
+      .setApplicationId('857147640851202068') // Please replace all values to your own. If it seems to say null then you could easily replace it with 'text/image-value' 
       .setType('STREAMING') // Playing, Streaming, Watching, Listening, Competing 
-      .setURL('https://twitch.tv/zensware')
-      .setState(null)
-      .setName('zensware')
-      .setDetails(null)
-      .setStartTimestamp(Date.now())
-      .setAssetsLargeImage('https://media.discordapp.net/attachments/1206955445940658287/1223590584963432559/e6161b3e1c2b6b737a47522fdf4b2d36-1328298384.gif?ex=661a6888&is=6607f388&hm=5a1cb58276bf5a60685435e827f683eb7c232af1c1e6fd1ecec4815cefad1787&=&width=545&height=559')
-      .setAssetsLargeText(null)
-      .setAssetsSmallImage(null)
-      .setAssetsSmallText(null)
-      .addButton('Github Repo', 'https://github.com/ZensDK/ZenithRPC')
-      .addButton('Discord', 'https://discord.gg/Xwp8WyZfX2');
+      .setURL('https://twitch.tv/xdd')
+      .setName('##1600')
+      .setDetails('$')
     client.user.setActivity(r);
   };
 
   updatePresenceAndActivity();
   setInterval(updatePresenceAndActivity, 30000);
-  client.user.setPresence({ status: "idle" });
+  client.user.setPresence({ status: "dnd" });
 });
 
 client.login(Authorization_Token);
