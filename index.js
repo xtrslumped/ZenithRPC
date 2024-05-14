@@ -60,7 +60,7 @@ client.on('ready', async () => {
       .setType('STREAMING') // Playing, Streaming, Watching, Listening, Competing 
       .setURL('https://twitch.tv/xdd')
       .setName('##1600')
-      .setDetails('$')
+      .setDetails('kill thots')
     client.user.setActivity(r);
   };
 
